@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Worm</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="style" rel="stylesheet" href="Style.css"></link>
+</head>
+<body id="forum">
+<script src="HomeTheme.js"></script>
+<header>
+<a href="BookWorm.html?th=1">
+<img src="Light_logo.png" id="logo">
+</a>
+<div class="Userpreference">
+  <img id="userimage" src="LightUser.png">
+  <div class="settings">
+    <p id="username">Username: Guest User</p>
+    <button id="Signinbutton" onclick="document.location='login.html'">Sign in</button>
+  </div>
+</div>
+<script src="navtoggle.js"></script>
+<button id="navicon" onclick="toggle();"><img src="nav.png" style="width:25px; height:25px;"></button>
+<nav class="navigationbar" id="mobnav">
+  <a  class="navig-link navig-link-ltr" href="BookWorm.html?th=1">Home</a>
+  <div class="dropdown">
+    <button class="navig-link navig-link-ltr" onclick="genrestoggle();">Genres</button>
+    <div class="dropdownmenu" id="mobdrop">
+      <a href="EnglishClassics.html?th=1" class="menuitem">English Classics</a>
+      <a href="#TeenFiction?th=1" class="menuitem">Teen Fiction</a>
+      <a href="#ChildrensBooks?th=1" class="menuitem">Children's books</a>
+      <a href="Self-Help.html?th=1" class="menuitem">Self-Help</a>
+      <a href="#Hobbies?th=1" class="menuitem">Hobbies</a>
+      <a href="#ComputerScience?th=1" class="menuitem">Computer Science</a>
+      <a href="#Commerce?th=1" class="menuitem">Commerce</a>
+      <a href="Biographies.html?th=1" class="menuitem">Biographies</a>
+      <a href="Comics.html?th=1" class="menuitem">Comics</a>
+      <a href="#Religion?th=1" class="menuitem">Religion</a>
+    </div>
+  </div>
+  <a id="active" href="Forum.html?th=1">Forum</a>
+  <a class="navig-link navig-link-ltr" href="MyShelf.html?th=1">MyShelf</a>
+  <a class="navig-link navig-link-ltr" href="About.html?th=1">About</a>
+</nav>
+<div class="searchbar">
+<input type="text" name="search" placeholder="Search forum" id="search"></input>
+<script src="Data.js"></script>
+<script src="Search.js"></script>
+<input type="image" id="Searchbutton" src="search.png" onclick="Search()"></input>
+</div>
+</header>
+<img src="Forum_banner.png" width="100%">
+<main id="main">
+<aside id="generallinks">
+  <button id="startdiscussion">Start a discussion</button>
+  <a>Forum Rules</a>
+  <a>Introduce Yourself</a>
+  <a>Forum Announcements</a>
+  <a>Know your moderators</a>
+</aside>
+<section id="discussionlist">
+  <div class="discussion">
+    <div class="discussionlink">
+      <a>Any book suggestions to read during holidays?</a>
+      <p>Leah replied 1 hour ago</p>
+    </div>
+    <div class="stats">
+      <p class="statsinfo">Views: 8</p>
+      <p class="statsinfo">Posts: 2</p>
+    </div>
+  </div>
+  <div class="discussion">
+    <div class="discussionlink">
+      <a>Tom Sawyer or Huck Finn - Who's your favorite?</a>
+      <p>You created this post 2 hours ago</p>
+    </div>
+    <div class="stats">
+      <p class="statsinfo">Views: 5</p>
+      <p class="statsinfo">Posts: 1</p>
+    </div>
+  </div>
+  <div class="discussion">
+    <div class="discussionlink">
+      <a>Some famous quotes from Wuthering Heights</a>
+      <p>Ron replied 3 hours ago</p>
+    </div>
+    <div class="stats">
+      <p class="statsinfo">Views: 14</p>
+      <p class="statsinfo">Posts: 6</p>
+    </div>
+  </div>
+  <div class="discussion">
+    <div class="discussionlink">
+      <a>Here's why "The Diary of a Young Girl" is a must-read for book-lovers</a>
+      <p>Jerry replied 5 hours ago</p>
+    </div>
+    <div class="stats">
+      <p class="statsinfo">Views: 63</p>
+      <p class="statsinfo">Posts: 28</p>
+    </div>
+  </div>
+  <div class="discussion">
+    <div class="discussionlink">
+      <a>My thoughts on Paulo Coelho's "The Alchemist"</a>
+      <p>Debbie replied 9 hours ago</p>
+    </div>
+    <div class="stats">
+      <p class="statsinfo">Views: 87</p>
+      <p class="statsinfo">Posts: 32</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+    <table id="ftable">
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="BookWorm.html?th=1">Home</a></td>
+      <td id="ftd"><h4 id="fheading">Genres</h4></td>
+      <td id="ftd"></td>
+      <td id="ftd"></td>
+      <td id="fheading">Contact us:</td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="Forum.html?th=1">Forum</a></td>
+      <td id="ftd"><a href="EnglishClassics.html?th=1" id="flink">English Classics</a></td>
+      <td id="ftd"><a href="#Hobbies?th=1" id="flink">Hobbies</a></td>
+      <td id="ftd"><a href="Comics.html?th=1" id="flink">Comics</a></td>
+      <td class="footerinfo">Landline: 3584 2222 </td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="MyShelf.html?th=1">MyShelf</a></td>
+      <td id="ftd"><a href="#TeenFiction?th=1" id="flink">Teen Fiction</a></td> 
+      <td id="ftd"><a href="#ComputerScience?th=1" id="flink">Computer Science</a></td>
+      <td id="ftd"><a href="#Religion?th=1" id="flink">Religion</a></td>
+      <td class="footerinfo">Email: bookworm@gmail.com</td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="About.html?th=1">About</a></td>
+      <td id="ftd"><a href="#ChildrensBooks?th=1" id="flink">Children's books</a></td>
+      <td id="ftd"><a href="#Commerce?th=1" id="flink">Commerce</a></td>
+      <td id="ftd"></td>
+      <td id="fheading">Follow us:</td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="Feedback.html?th=1">Feedback</a></td>
+      <td id="ftd"><a href="Self-Help.html?th=1" id="flink">Self-Help</a></td>
+      <td id="ftd"><a href="Biographies.html?th=1" id="flink">Biographies</a></td>
+      <td id="ftd"></td>
+      <td id="ftd"><a href="#"><img src="Footer_icons/insta.png" class="ficon"></a><a href="#"><img src="Footer_icons/facebook.png" class="ficon"></a><a href="#"><img src="Footer_icons/linkedin.png" class="ficon"></a></td>
+    </tr>
+    </table>
+    <center><p class="copytext">Copyrights reserved 2023 <img class="copyicon" src="Footer_icons/copyright.png"></p></center>
+</footer>
+<script src="checkTheme.js"></script>
+<script src="SetTheme.js"></script>
+</body>
+</html>
+

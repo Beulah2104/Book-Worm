@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Book Worm</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link id="style" rel="stylesheet" href="Style.css"></link>
+</head>
+<body id="Bookpage">
+<header>
+<a href="BookWorm.html?th=1">
+<img src="Light_logo.png" id="logo">
+</a>
+<div class="Userpreference">
+  <img id="userimage" src="LightUser.png">
+  <div class="settings">
+    <p id="username">Username: Guest User</p>
+    <button id="Signinbutton" onclick="document.location='login.html'">Sign in</button>
+  </div>
+</div>
+<script src="navtoggle.js"></script>
+<button id="navicon" onclick="toggle();"><img src="nav.png" style="width:25px; height:25px;"></button>
+<nav class="navigationbar" id="mobnav">
+  <a class="navig-link navig-link-ltr" href="BookWorm.html?th=1">Home</a>
+  <div class="dropdown">
+    <button class="navig-link navig-link-ltr" onclick="genrestoggle();">Genres</button>
+    <div class="dropdownmenu" id="mobdrop">
+      <a href="EnglishClassics.html?th=1" class="menuitem">English Classics</a>
+      <a href="#?th=1" class="menuitem">Teen Fiction</a>
+      <a href="#?th=1" class="menuitem">Children's books</a>
+      <a href="Self-Help.html?th=1" class="menuitem">Self-Help</a>
+      <a href="#?th=1" class="menuitem">Hobbies</a>
+      <a href="#?th=1" class="menuitem">Computer Science</a>
+      <a href="#?th=1" class="menuitem">Commerce</a>
+      <a href="Biographies.html?th=1" class="menuitem">Biographies</a>
+      <a href="Comics.html?th=1" class="menuitem">Comics</a>
+      <a href="#Religion?th=1" class="menuitem">Religion</a>
+    </div>
+  </div>
+  <a class="navig-link navig-link-ltr" href="Forum.html?th=1">Forum</a>
+  <a class="navig-link navig-link-ltr" href="MyShelf.html?th=1">MyShelf</a>
+  <a class="navig-link navig-link-ltr" href="About.html?th=1">About</a>
+</nav>
+<div class="searchbar">
+<input type="text" name="search" placeholder="Search" id="search"></input>
+<script src="Data.js"></script>
+<script src="SearchOthers.js"></script>
+<input type="image" id="Searchbutton" src="search.png" onclick="Search()"></input>
+</div>
+</header>
+<main>
+<main>
+<div id="cover">
+<img id="book" src="" >
+</div>
+<div id="details">
+<h3 id="booktitle"></h3>
+<p id="description"></p>
+<table id="tab">
+<tr><td id="booktd"><h3 id="head" class="label">Author: </h3><p class="label" id="author1"></p><br><br></td>
+<td id="booktd"><h3 id="head" class="label">No. of pages: </h3><p class="label" id="pages"></p><br><br></td></tr>
+<tr><td id="booktd"><h3 id="head" class="label">Publication: </h3><p class="label" id="publication"></p><br><br></td>
+<td id="booktd"><h3 id="head" class="label">Price: ₹ </h3><p class="label" id="rate"></p></tr></td>
+<tr><td id="booktd"><h3 id="head" class="label">Rating: </h3><p class="label" id="Rating"></p><br><br></td>
+<td id="booktd"><h3 id="head" class="label">Reads: </h3><p class="label" id="Reads"></p></tr></td>
+<td id="booktd"><h3 id="head" class="label">Rent days: </h3><p class="label" id="days"></p></tr></td>
+</table>
+<br><br><br>
+
+<div class="button-container">
+  <button class="button-1" role="button"><a class="paylink" href="payment.html?th=1">Rent</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button class="button-1" role="button"><a class="paylink" href="MyShelf.html?th=1">Add to Wishlist</a></button>
+</div>
+</div>
+<script src="DisplayBook.js"></script>
+</main>
+</main>
+<br><br><br><br><br>
+<footer>
+    <table id="ftable">
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="BookWorm.html?th=1">Home</a></td>
+      <td id="ftd"><h4 id="fheading">Genres</h4></td>
+      <td id="ftd"></td>
+      <td id="ftd"></td>
+      <td id="fheading">Contact us:</td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="Forum.html?th=1">Forum</a></td>
+      <td id="ftd"><a href="EnglishClassics.html?th=1" id="flink">English Classics</a></td>
+      <td id="ftd"><a href="#Hobbies?th=1" id="flink">Hobbies</a></td>
+      <td id="ftd"><a href="Comics.html?th=1" id="flink">Comics</a></td>
+      <td class="footerinfo">Landline: 3584 2222 </td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="MyShelf.html?th=1">MyShelf</a></td>
+      <td id="ftd"><a href="#TeenFiction?th=1" id="flink">Teen Fiction</a></td> 
+      <td id="ftd"><a href="#ComputerScience?th=1" id="flink">Computer Science</a></td>
+      <td id="ftd"><a href="#Religion?th=1" id="flink">Religion</a></td>
+      <td class="footerinfo">Email: bookworm@gmail.com</td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="About.html?th=1">About</a></td>
+      <td id="ftd"><a href="#ChildrensBooks?th=1" id="flink">Children's books</a></td>
+      <td id="ftd"><a href="#Commerce?th=1" id="flink">Commerce</a></td>
+      <td id="ftd"></td>
+      <td id="fheading">Follow us:</td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="Feedback.html?th=1">Feedback</a></td>
+      <td id="ftd"><a href="Self-Help.html?th=1" id="flink">Self-Help</a></td>
+      <td id="ftd"><a href="Biographies.html?th=1" id="flink">Biographies</a></td>
+      <td id="ftd"></td>
+      <td id="ftd"><a href="#"><img src="Footer_icons/insta.png" class="ficon"></a><a href="#"><img src="Footer_icons/facebook.png" class="ficon"></a><a href="#"><img src="Footer_icons/linkedin.png" class="ficon"></a></td>
+    </tr>
+    </table>
+    <center><p class="copytext">Copyrights reserved 2023 <img class="copyicon" src="Footer_icons/copyright.png"></p></center>
+</footer>
+<script src=SetTheme.js></script>
+</body>
+</html>

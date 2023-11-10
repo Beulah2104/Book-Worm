@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+	  <link id="style" rel="stylesheet" href="Style.css"></link>
+
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    
+<header>
+<a href="BookWorm.html?th=1">
+<img src="Light_logo.png" id="logo">
+</a>
+<div class="Userpreference">
+  <img id="userimage" src="LightUser.png">
+  <div class="settings">
+    <p id="username">Username: Guest User</p>
+    
+      <button id="Signinbutton" onclick="document.location='login.html'">Sign in</button>
+  </div>
+</div>
+<script src="navtoggle.js"></script>
+<button id="navicon" onclick="toggle();"><img src="nav.png" style="width:25px; height:25px;"></button>
+<nav class="navigationbar" id="mobnav">
+  <a class="navig-link navig-link-ltr" href="BookWorm.html?th=1">Home</a>
+  <div class="dropdown">
+    <button class="navig-link navig-link-ltr" onclick="genrestoggle();">Genres</button>
+    <div class="dropdownmenu" id="mobdrop">
+      <a href="EnglishClassics.html?th=1" class="menuitem">English Classics</a>
+      <a href="#TeenFiction?th=1" class="menuitem">Teen Fiction</a>
+      <a href="#ChildrensBooks?th=1" class="menuitem">Children's books</a>
+      <a href="Self-Help.html?th=1" class="menuitem">Self-Help</a>
+      <a href="#Hobbies?th=1" class="menuitem">Hobbies</a>
+      <a href="#ComputerScience?th=1" class="menuitem">Computer Science</a>
+      <a href="#Commerce?th=1" class="menuitem">Commerce</a>
+      <a href="Biographies.html?th=1" class="menuitem">Biographies</a>
+      <a href="Comics.html?th=1" class="menuitem">Comics</a>
+      <a href="#Religion?th=1" class="menuitem">Religion</a>
+    </div>
+  </div>
+  <a class="navig-link navig-link-ltr" href="Forum.html?th=1">Forum</a>
+  <a class="navig-link navig-link-ltr" href="MyShelf.html?th=1">MyShelf</a>
+  <a id="active" href="About.html?th=1">About</a>
+</nav>
+<div class="searchbar">
+<input type="text" name="search" placeholder="Search" id="search"></input>
+<script src="Data.js"></script>
+<script src="SearchOthers.js"></script>
+<input type="image" id="Searchbutton" src="search.png" onclick="Search()"></input>
+</div>
+</header>
+<main>
+   <!-- About Us Section -->
+    <section class="py-5">
+	<div class="container well">
+
+        <div class="container">
+            <h1 class="text-center mb-5" id="abt">About Us</h1>
+
+            <div class="row">
+			   
+                <div class="col-md-6">
+                   <center> <h3 id="abt">Our Mission</h3></center>
+                    <p class="bg-info " style="padding: 12px; border-radius: 8px;">Our mission is to provide quality but affordable books for education, entertainment, self-development and self-fulfillment; to all when the need arises by:
+Providing a wide range of books to satisfy our clients
+Exceeding our customers’ expectation in their book requirements
+Making our books accessible in the market. 
+Acting as agents for both customers and publishers and working for their interest; enriching our client’s life in their quest for educational and entertaining books and advancing the cause of our publishers.</p>
+
+				</div>
+                <div class="col-md-6">
+                    <center><h3 id="abt">Our Vision</h3></center>
+                    <p class="bg-warning " style="padding: 12px; border-radius: 8px;">We strive towards making our society a more egalitarian one. We know that the only way to achieve this objective is through disseminating 'quality education through quality books'. We dream about a progressive society where quality books are available to each child. A society where every child grows up to become an educated and competent citizen of India.
+ Our Vision is a world in which all aspiring authors have written and published their book such that they leave this world having left their message behind to carry on for generations yet to come.</p>
+               
+			   </div>
+            </div>
+			
+			<div class="row">
+                <div class="col-md-6">
+                    <center><h3 id="abt">We believe in</h3></center>
+                    <p class="bg-warning " style="padding: 12px; border-radius: 8px;">
+Books give people power. They inform and inspire, and help people create a better, more equal future.
+Everyone should experience the power of books. Everybody everywhere should have access to books, whatever their circumstances
+Partnerships are vital. By working together we can create sustainable change and give more people the opportunity to read.
+Authors benefit from our industry experience, connections, and our commitment to keep up with the latest trends in the world.
+</p>
+                </div>
+                <div class="col-md-6">
+                    <center><h3 id="abt">Our Business</h3></center>
+                    <p class="bg-info " style="padding: 12px; border-radius: 8px;">We provide new books around the world and work with our partners to create reading spaces, train teachers and librarians and spark a love of reading.We provide training that helps teachers, librarians and volunteers gain the skills and confidence they need to share the power of books with people in their own communities.
+ 	
+To curate memorable, community-based experiences, leveraging all the treasures of literature, for the intellectually curious, passionately creative, and socially engaged.</p>
+                </div>
+            </div>
+        </div>
+		</div>
+    </section>
+</main>
+    
+
+    <!-- Add Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoJtKh7z7lGz7fuP4F8nfdFvAOA6Gg/z6Y5J6XqqyGXYM2ntX5" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ6pajs/rfdfs3SO+kD4Ck5BdPtF+to8xMp9Mvc9XL8l+z4Wt" crossorigin="anonymous"></script>
+<footer>
+    <table id="ftable">
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="BookWorm.html?th=1">Home</a></td>
+      <td id="ftd"><h4 id="fheading">Genres</h4></td>
+      <td id="ftd"></td>
+      <td id="ftd"></td>
+      <td id="fheading">Contact us:</td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="Forum.html?th=1">Forum</a></td>
+      <td id="ftd"><a href="EnglishClassics.html?th=1" id="flink">English Classics</a></td>
+      <td id="ftd"><a href="#Hobbies?th=1" id="flink">Hobbies</a></td>
+      <td id="ftd"><a href="Comics.html?th=1" id="flink">Comics</a></td>
+      <td class="footerinfo">Landline: 3584 2222 </td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="MyShelf.html?th=1">MyShelf</a></td>
+      <td id="ftd"><a href="#TeenFiction?th=1" id="flink">Teen Fiction</a></td> 
+      <td id="ftd"><a href="#ComputerScience?th=1" id="flink">Computer Science</a></td>
+      <td id="ftd"><a href="#Religion?th=1" id="flink">Religion</a></td>
+      <td class="footerinfo">Email: bookworm@gmail.com</td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="About.html?th=1">About</a></td>
+      <td id="ftd"><a href="#ChildrensBooks?th=1" id="flink">Children's books</a></td>
+      <td id="ftd"><a href="#Commerce?th=1" id="flink">Commerce</a></td>
+      <td id="ftd"></td>
+      <td id="fheading">Follow us:</td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="Feedback.html?th=1">Feedback</a></td>
+      <td id="ftd"><a href="Self-Help.html?th=1" id="flink">Self-Help</a></td>
+      <td id="ftd"><a href="Biographies.html?th=1" id="flink">Biographies</a></td>
+      <td id="ftd"></td>
+      <td id="ftd"><a href="#"><img src="Footer_icons/insta.png" class="ficon"></a><a href="#"><img src="Footer_icons/facebook.png" class="ficon"></a><a href="#"><img src="Footer_icons/linkedin.png" class="ficon"></a></td>
+    </tr>
+    </table>
+    <center><p class="copytext">Copyrights reserved 2023 <img class="copyicon" src="Footer_icons/copyright.png"></p></center>
+</footer>
+<script src="SetTheme.js"></script>
+
+</body>
+</html>

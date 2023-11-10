@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<title>Book Worm</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link id="style" rel="stylesheet" href="Style.css"></link>
+</head>
+<body id="Classics">
+<header>
+<a href="BookWorm.html?th=1">
+<img src="Light_logo.png" id="logo">
+</a>
+<div class="Userpreference">
+  <img id="userimage" src="LightUser.png">
+  <div class="settings">
+    <p id="username">Username: Guest User</p>
+    <button id="Signinbutton" onclick="document.location='login.html'">Sign in</button>
+  </div>
+</div>
+<script src="navtoggle.js"></script>
+<button id="navicon" onclick="toggle();"><img src="nav.png" style="width:25px; height:25px;"></button>
+<nav class="navigationbar" id="mobnav">
+  <a class="navig-link navig-link-ltr" href="BookWorm.html?th=1">Home</a>
+  <div class="dropdown">
+    <button class="navig-link navig-link-ltr" onclick="genrestoggle();">Genres</button>
+    <div class="dropdownmenu" id="mobdrop">
+      <a href="EnglishClassics.html?th=1" class="menuitem">English Classics</a>
+      <a href="#?th=1" class="menuitem">Teen Fiction</a>
+      <a href="#?th=1" class="menuitem">Children's books</a>
+      <a href="Self-Help.html?th=1" class="menuitem">Self-Help</a>
+      <a href="#?th=1" class="menuitem">Hobbies</a>
+      <a href="#?th=1" class="menuitem">Computer Science</a>
+      <a href="#?th=1" class="menuitem">Commerce</a>
+      <a href="Biographies.html?th=1" class="menuitem">Biographies</a>
+      <a href="Comics.html?th=1" class="menuitem">Comics</a>
+      <a href="#Religion?th=1" class="menuitem">Religion</a>
+    </div>
+  </div>
+  <a class="navig-link navig-link-ltr" href="Forum.html?th=1">Forum</a>
+  <a class="navig-link navig-link-ltr" href="MyShelf.html?th=1">MyShelf</a>
+  <a class="navig-link navig-link-ltr" href="About.html?th=1">About</a>
+</nav>
+<div class="searchbar">
+<input type="text" name="search" placeholder="Search" id="search"></input>
+<script src="Data.js"></script>
+<script src="SearchOthers.js"></script>
+<input type="image" id="Searchbutton" src="search.png" onclick="Search()"></input>
+</div>
+</header>
+<main>
+<section class="extract">
+<script src="Extraction.js" ></script>
+<script src="Enable.js"></script>
+<form id="extract">
+<label for="sortby">Sort by:</label>
+<select id="sortby">
+<option value="None">None</option>
+<option value="Top-read">Top-read</option>
+<option value="Top-rated">Top-rated</option>
+<option value="HighPrice">Price - Highest</option>
+<option value="LowPrice">Price - Cheapest</option>
+</select>
+<label for="filterby">Filter By:</label>
+<select id="filterby" onchange="enable();">
+<option value="None">None</option>
+<option value="price">Price</option>
+<option value="rentdays">Rent Days</option>
+</select>
+<label for="min">Min:</label>
+<input type="number" id="min" disabled></input>
+<label for="max">Max:</label>
+<input type="number" id="max" disabled></input>
+</form>
+<button id="extractsubmit" onclick="extract()">Submit</button>
+</section>
+<section class="booksection">
+<h3 class="Booklistheading">English Classics</h3>
+<center><div class="bookdiv" id="00001">
+<a class="booklink" href="BookDetails.html?booknum=00001&th=1">
+<img class="book" src="Bookcovers/Classics/00001.jpeg"></a>
+<p class="bookname"></p>
+</div></center>
+<center><div class="bookdiv" id="00002">
+<a class="booklink" href="BookDetails.html?booknum=00002&th=1">
+<img class="book" src="Bookcovers/Classics/00002.jpeg"></a>
+<p class="bookname"></p>
+</div></center>
+<center><div class="bookdiv" id="00003">
+<a class="booklink" href="BookDetails.html?booknum=00003&th=1">
+<img class="book" src="Bookcovers/Classics/00003.jpeg"></a>
+<p class="bookname"></p>
+</div></center>
+<center>
+<div class="bookdiv" id="00004">
+<a class="booklink" href="BookDetails.html?booknum=00004&th=1">
+<img class="book" src="Bookcovers/Classics/00004.jpeg"></a>
+<p class="bookname"></p>
+</div></center>
+<center>
+<div class="bookdiv" id="00005">
+<a class="booklink" href="BookDetails.html?booknum=00005&th=1">
+<img class="book" src="Bookcovers/Classics/00005.jpeg"></a>
+<p class="bookname"></p>
+</div></center>
+<center>
+<div class="bookdiv" id="00006">
+<a class="booklink" href="BookDetails.html?booknum=00006&th=1">
+<img class="book" src="Bookcovers/Classics/00006.jpeg"></a>
+<p class="bookname"></p>
+</div></center>
+<center>
+<div class="bookdiv" id="00007">
+<a class="booklink" href="BookDetails.html?booknum=00007&th=1">
+<img class="book" src="Bookcovers/Classics/00007.jpeg"></a>
+<p class="bookname"></p>
+</div></center>
+<center>
+<div class="bookdiv" id="00008">
+<a class="booklink" href="BookDetails.html?booknum=00008&th=1">
+<img class="book" src="Bookcovers/Classics/00008.jpeg"></a>
+<p class="bookname"></p>
+</div></center>
+<center>
+<div class="bookdiv" id="00009">
+<a class="booklink" href="BookDetails.html?booknum=00009&th=1">
+<img class="book" src="Bookcovers/Classics/00009.jpeg"></a>
+<p class="bookname"></p>
+</div></center>
+<center>
+<div class="bookdiv" id="00010">
+<a class="booklink" href="BookDetails.html?booknum=00010&th=1">
+<img class="book" src="Bookcovers/Classics/00010.jpeg"></a>
+<p class="bookname"></p>
+</div></center>
+<center>
+<div class="bookdiv" id="00011">
+<a class="booklink" href="BookDetails.html?booknum=00011&th=1">
+<img class="book" src="Bookcovers/Classics/00011.jpeg"></a>
+<p class="bookname"></p>
+</div></center>
+<center>
+<div class="bookdiv" id="00012">
+<a class="booklink" href="BookDetails.html?booknum=00012&th=1">
+<img class="book" src="Bookcovers/Classics/00012.jpeg"></a>
+<p class="bookname"></p>
+</div></center>
+<script src="fillBookDetails.js"></script>
+</section>
+</main>
+<footer>
+    <table id="ftable">
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="BookWorm.html?th=1">Home</a></td>
+      <td id="ftd"><h4 id="fheading">Genres</h4></td>
+      <td id="ftd"></td>
+      <td id="ftd"></td>
+      <td id="fheading">Contact us:</td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="Forum.html?th=1">Forum</a></td>
+      <td id="ftd"><a href="EnglishClassics.html?th=1" id="flink">English Classics</a></td>
+      <td id="ftd"><a href="#Hobbies?th=1" id="flink">Hobbies</a></td>
+      <td id="ftd"><a href="Comics.html?th=1" id="flink">Comics</a></td>
+      <td class="footerinfo">Landline: 3584 2222 </td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="MyShelf.html?th=1">MyShelf</a></td>
+      <td id="ftd"><a href="#TeenFiction?th=1" id="flink">Teen Fiction</a></td> 
+      <td id="ftd"><a href="#ComputerScience?th=1" id="flink">Computer Science</a></td>
+      <td id="ftd"><a href="#Religion?th=1" id="flink">Religion</a></td>
+      <td class="footerinfo">Email: bookworm@gmail.com</td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="About.html?th=1">About</a></td>
+      <td id="ftd"><a href="#ChildrensBooks?th=1" id="flink">Children's books</a></td>
+      <td id="ftd"><a href="#Commerce?th=1" id="flink">Commerce</a></td>
+      <td id="ftd"></td>
+      <td id="fheading">Follow us:</td>
+    </tr>
+    <tr id="ftr">
+      <td id="ftd"><a id="flink" href="Feedback.html?th=1">Feedback</a></td>
+      <td id="ftd"><a href="Self-Help.html?th=1" id="flink">Self-Help</a></td>
+      <td id="ftd"><a href="Biographies.html?th=1" id="flink">Biographies</a></td>
+      <td id="ftd"></td>
+      <td id="ftd"><a href="#"><img src="Footer_icons/insta.png" class="ficon"></a><a href="#"><img src="Footer_icons/facebook.png" class="ficon"></a><a href="#"><img src="Footer_icons/linkedin.png" class="ficon"></a></td>
+    </tr>
+    </table>
+    <center><p class="copytext">Copyrights reserved 2023 <img class="copyicon" src="Footer_icons/copyright.png"></p></center>
+</footer>
+<script src="SetTheme.js"></script>
+</body>
+</html>
