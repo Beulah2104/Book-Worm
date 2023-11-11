@@ -646,11 +646,6 @@ footer{
 }
 /* Newly added for displaying booktitle*/
 
-.bookdiv{
-  float: left;
-  margin: 0.25%;
-  display: inline-block;
-}
 
 .bookname{
   text-align: center;
